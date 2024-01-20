@@ -1,17 +1,14 @@
-package simplesweep;
+package me.bjtmastermind.simplesweep;
 
-import com.electronwill.nightconfig.core.file.CommentedFileConfig;
-import com.electronwill.nightconfig.core.io.WritingMode;
-import java.nio.file.Path;
 import java.util.Collections;
 import java.util.List;
 
-import net.minecraft.resources.ResourceLocation;
-import net.minecraftforge.common.ForgeConfigSpec;
-
 public class Config {
+    public static List<? extends String> whitelist = Collections.emptyList();
+    public static List<? extends String> blacklist = Collections.emptyList();
+    public static boolean onlyCrouch = false;
 
-    private static final ForgeConfigSpec.Builder COMMON_BUILDER = new ForgeConfigSpec.Builder();
+    /*private static final ForgeConfigSpec.Builder COMMON_BUILDER = new ForgeConfigSpec.Builder();
     public static ForgeConfigSpec COMMON_CONFIG;
 
     public static ForgeConfigSpec.ConfigValue<List<? extends String>> whitelist;
@@ -40,17 +37,5 @@ public class Config {
             .define("onlyCrouch", false);
 
         COMMON_CONFIG = COMMON_BUILDER.build();
-    }
-
-    public static void loadConfig(ForgeConfigSpec spec, Path path) {
-        final CommentedFileConfig configData = CommentedFileConfig.builder(path)
-                .sync()
-                .autosave()
-                .writingMode(WritingMode.REPLACE)
-                .build();
-
-        configData.load();
-        spec.setConfig(configData);
-    }
-
+    }*/
 }

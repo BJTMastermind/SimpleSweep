@@ -1,0 +1,32 @@
+{
+    "schemaVersion": 1,
+    "id": "simplesweep",
+    "version": "${version}",
+    "name": "SimpleSweep",
+    "description": "Removes the sweep attack unless the weapon is enchanted with a sweeping enchantment (i.e. Sweeping Edge).",
+    "authors": [
+        "J-Dill",
+        "BJTMastermind"
+    ],
+    "contact": {
+        "sources": "https://github.com/BJTMastermind/SimpleSweep"
+    },
+    "license": "MIT License",
+    "icon": "assets/simplesweep/icon.png",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            "me.bjtmastermind.simplesweep.SimpleSweep"
+        ]
+    },
+    "mixins": [],
+    "depends": {
+        "fabricloader": ">=0.15.0",
+        "minecraft": "~1.20.4",
+        "java": ">=17",
+        "fabric-api": "*"
+    },
+    "suggests": {
+        "another-mod": "*"
+    }
+}
